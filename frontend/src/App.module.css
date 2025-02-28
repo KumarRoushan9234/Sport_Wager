@@ -1,0 +1,35 @@
+/* Global styles */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background-color: #000000; /* Match app background */
+}
+
+/* Main app container */
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Ensures app stretches fully */
+  background-color: #000000; /* Consistent with the theme */
+}
+
+/* Main content section */
+.main {
+  flex: 1; /* This ensures the main section takes all available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px; /* Optional: Adds space before the footer */
+}
+
+/* Footer styles */
+.footer {
+  background-color: #1e1e2f;
+  color: #cccccc;
+  text-align: center;
+  padding: 15px;
+  font-size: 14px;
+  font-family: 'Roboto', sans-serif;
+  margin-top: 30px; /* Ensure it is visible without overlapping content */
+}

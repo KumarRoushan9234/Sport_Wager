@@ -1,0 +1,71 @@
+/* About.module.css */
+.aboutContainer {
+  padding: 20px;
+  background-color: #121212; /* Darker background */
+  color: #e0e0e0; /* Light text for contrast */
+  font-family: 'Roboto', sans-serif;
+  min-height: 100vh; /* Ensure full viewport height */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* To remove space at the bottom */
+
+  margin: 40px;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  color: #4caf50; /* Green color for emphasis */
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.description, .technologies, .currentLimitations, .futurePlans {
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1.5rem;
+  color: #4caf50; /* Green for section titles */
+}
+
+.subHeading {
+  font-size: 1.3rem;
+  color: #f44336; /* Red color for subheadings (adjust as needed) */
+  margin-top: 10px;
+}
+
+p {
+  font-size: 1rem;
+  color: #b3b3b3; /* Light grey for the paragraph text */
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+li {
+  font-size: 1rem;
+  color: #b3b3b3; /* Light grey for list items */
+}
+
+ul li strong {
+  color: #4caf50; /* Green for emphasis in list items */
+}
+
+footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: #b3b3b3;
+}
+
+@media (max-width: 768px) {
+  .pageTitle {
+    font-size: 1.8rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+}
