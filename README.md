@@ -26,8 +26,13 @@
 
 ## 📂 Folder Structure
 
-````
-Sport_Wager/ │── frontend/ # React.js frontend │── backend/ # Express.js backend │── .gitignore # Ignored files │── README.md # Project documentation
+````plaintext
+Sport_Wager/
+├── frontend/         # React.js frontend
+├── backend/          # Express.js backend
+├── .gitignore        # Ignored files
+├── README.md         # Project documentation
+
 
 ### Clone the repository
 
