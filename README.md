@@ -26,17 +26,18 @@
 
 ## 📂 Folder Structure
 
-````plaintext
+```bash
 Sport_Wager/
 ├── frontend/         # React.js frontend
 ├── backend/          # Express.js backend
 ├── .gitignore        # Ignored files
 ├── README.md         # Project documentation
-
+├── lstm_model.h5     # models used in project
+```
 
 ### Clone the repository
 
 ```bash
 git clone https://github.com/KumarRoushan9234/Sport_Wager.git
 cd Sport_Wager
-````
+```
