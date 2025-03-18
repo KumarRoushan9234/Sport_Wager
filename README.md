@@ -10,7 +10,7 @@
 - 🔄 **Match Prediction ** – View Match Prediction and Probablity of winners
 - 💰 **Bet Placement** – Users can place bets on various sports events
 - 📊 **Live Match Tracking** – Get real-time updates on scores & bets
-- 🔄 **Foot Chat** – 
+- 🔄 **Foot Chat** – Deep Convo on football with **LLama based Chat-Bot**
 - 🔐 **User Authentication** – Signup/Login via **Email & Google OAuth**
 
 ---
@@ -18,7 +18,7 @@
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
+- **Backend**: Node.js, Express.js, FastApi
 - **Database**: MongoDB
 - **Authentication**: Firebase / JWT
 - **Real-Time Updates**: WebSockets / Socket.io
