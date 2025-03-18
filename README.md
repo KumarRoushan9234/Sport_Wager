@@ -6,11 +6,12 @@
 
 ## 🚀 Features
 
-- 🔐 **User Authentication** – Signup/Login via **Email & Google OAuth**
+
+- 🔄 **Match Prediction ** – View Match Prediction and Probablity of winners
 - 💰 **Bet Placement** – Users can place bets on various sports events
 - 📊 **Live Match Tracking** – Get real-time updates on scores & bets
-- 🔄 **Transaction History** – Track past bets, winnings, and losses
-- 💳 **Secure Payments** – Integrated payment gateway for deposits & withdrawals
+- 🔄 **Foot Chat** – 
+- 🔐 **User Authentication** – Signup/Login via **Email & Google OAuth**
 
 ---
 
