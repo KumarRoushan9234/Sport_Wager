@@ -1,17 +1,16 @@
 import React from "react";
 import { useNavigate } from "react-router-dom"; // Hook for navigation
-import styles from "./LandingPage.module.css"; // Custom CSS for styling
+import styles from "./LandingPage.module.css";
 
 const LandingPage = () => {
   const navigate = useNavigate();
 
   const handleLetsGoClick = () => {
-    navigate("/predictor"); // Navigate to predictor (FM1) page
+    navigate("/predictor");
   };
 
   return (
     <div className={styles.container}>
-      {/* Full screen hero section with black and red gradient */}
       <section className={styles.heroSection}>
         <div className={styles.heroContent}>
           <h1 className={styles.heroTitle}>Welcome to Sport-Wager</h1>
@@ -25,7 +24,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Information Boxes */}
       <section className={styles.infoBoxes}>
         <div className={styles.infoBox}>
           <h2 className={styles.boxTitle}>What is Sport-Wager?</h2>
