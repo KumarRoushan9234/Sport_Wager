@@ -1,6 +1,5 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import FM1 from "./pages/FM1";
@@ -11,10 +10,10 @@ import Chat from "./pages/Chat";
 const App = () => {
   return (
     <Router>
-      <div className="flex flex-col min-h-screen bg-black">
+      <div className="flex flex-col min-h-screen bg-black text-gray-200">
         <Header />
 
-        <main className="flex-1 flex justify-center items-center pb-12">
+        <main className="flex-1 container mx-auto px-6 md:px-12 lg:px-24 py-10">
           <Routes>
             <Route path="/" element={<LandingPage />} />
             <Route path="/predictor" element={<FM1 />} />
@@ -23,7 +22,7 @@ const App = () => {
           </Routes>
         </main>
 
-        <Footer className="bg-[#1e1e2f] text-gray-400 text-center py-4 text-sm font-roboto mt-8" />
+        <Footer />
       </div>
     </Router>
   );

@@ -20,13 +20,11 @@ try :
 except Exception as e:
     print("Google API key not found. Please set it in the .env file.")
 
-
-
 app = FastAPI()
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:3000"],  # frontend origin
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

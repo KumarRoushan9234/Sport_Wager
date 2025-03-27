@@ -3,37 +3,46 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="bg-gray-800 text-white flex justify-between items-center px-6 py-3 border-b-2 border-red-500 shadow-md rounded-lg w-11/12 mx-auto mt-4 sticky top-0 z-50">
-      {/* Logo */}
-      <h1>
+    <header className="bg-[#1e1e2f] shadow-md py-4 px-6 md:px-12">
+      <div className="container mx-auto flex justify-between items-center">
+        {/* 🔹 Logo */}
         <Link
           to="/"
-          className="text-xl font-bold hover:text-red-500 transition"
+          className="text-[#00ff99] text-2xl font-bold tracking-wide"
         >
-          Sport-Wager
+          Sport Wager
         </Link>
-      </h1>
 
-      {/* Navigation */}
-      <nav>
-        <ul className="flex gap-6">
-          <li>
-            <Link to="/predictor" className="hover:text-red-500 transition">
-              Prediction
-            </Link>
-          </li>
-          <li>
-            <Link to="/chat" className="hover:text-red-500 transition">
-              Chat
-            </Link>
-          </li>
-          <li>
-            <Link to="/about" className="hover:text-red-500 transition">
-              About
-            </Link>
-          </li>
-        </ul>
-      </nav>
+        {/* 🔹 Navigation */}
+        <nav className="space-x-6 hidden md:flex">
+          <Link
+            to="/"
+            className="text-gray-300 hover:text-[#00ff99] transition duration-300"
+          >
+            Home
+          </Link>
+          <Link
+            to="/predictor"
+            className="text-gray-300 hover:text-[#00ff99] transition duration-300"
+          >
+            Predictor
+          </Link>
+          <Link
+            to="/about"
+            className="text-gray-300 hover:text-[#00ff99] transition duration-300"
+          >
+            About
+          </Link>
+          <Link
+            to="/chat"
+            className="text-gray-300 hover:text-[#00ff99] transition duration-300"
+          >
+            Chat
+          </Link>
+        </nav>
+
+        {/* 🔹 Mobile Menu (optional, for later) */}
+      </div>
     </header>
   );
 };

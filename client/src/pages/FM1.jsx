@@ -67,7 +67,7 @@ const FM1 = () => {
     }
 
     try {
-      const response = await fetch("http://127.0.0.1:5000/predict", {
+      const response = await fetch("http://127.0.0.1:8000/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -110,13 +110,15 @@ const FM1 = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
-      <main className="flex-grow flex justify-center items-center bg-gray-900 text-white p-6">
-        <div className="bg-gray-800 p-6 rounded-lg shadow-lg w-full max-w-md">
+      <main className="flex-grow flex justify-center items-center bg-[#121A2C] text-white p-6">
+        <div className="bg-[#182238] p-6 rounded-lg shadow-lg w-full max-w-md">
           <Toaster />
           <form className="flex flex-col gap-4" onSubmit={handleSubmit}>
-            <label className="text-lg font-bold text-red-500">Home Team:</label>
+            <label className="text-lg font-bold text-[#1E90FF]">
+              Home Team:
+            </label>
             <select
-              className="p-2 rounded border border-gray-600 bg-gray-700 text-white focus:ring focus:ring-red-500"
+              className="p-2 rounded border border-[#00C6A2] bg-[#1C2A48] text-white focus:ring focus:ring-[#1E90FF]"
               value={homeTeam}
               onChange={(e) => setHomeTeam(e.target.value)}
               required
@@ -131,9 +133,11 @@ const FM1 = () => {
               ))}
             </select>
 
-            <label className="text-lg font-bold text-red-500">Away Team:</label>
+            <label className="text-lg font-bold text-[#1E90FF]">
+              Away Team:
+            </label>
             <select
-              className="p-2 rounded border border-gray-600 bg-gray-700 text-white focus:ring focus:ring-red-500"
+              className="p-2 rounded border border-[#00C6A2] bg-[#1C2A48] text-white focus:ring focus:ring-[#1E90FF]"
               value={awayTeam}
               onChange={(e) => setAwayTeam(e.target.value)}
               required
@@ -150,29 +154,30 @@ const FM1 = () => {
 
             <button
               type="submit"
-              className="bg-red-600 text-white py-2 px-4 rounded hover:bg-red-500 transition"
+              className="bg-[#1E90FF] text-white py-2 px-4 rounded hover:bg-[#00C6A2] transition"
             >
               Predict
             </button>
           </form>
 
           {result && (
-            <div className="mt-6 p-4 bg-gray-700 rounded shadow-md">
+            <div className="mt-6 p-4 bg-[#1C2A48] rounded shadow-md">
               <h3 className="text-lg font-bold">
-                <span className="text-red-500">Home Team:</span> {homeTeam}
+                <span className="text-[#00C6A2]">Home Team:</span> {homeTeam}
               </h3>
               <h3 className="text-lg font-bold">
-                <span className="text-red-500">Away Team:</span> {awayTeam}
+                <span className="text-[#00C6A2]">Away Team:</span> {awayTeam}
               </h3>
               <h3 className="text-lg font-bold">
-                <span className="text-red-500">Predicted Result:</span> {result}
+                <span className="text-[#1E90FF]">Predicted Result:</span>{" "}
+                {result}
               </h3>
             </div>
           )}
 
           {history && (
-            <div className="mt-6 p-4 bg-gray-700 rounded shadow-md">
-              <h3 className="text-lg font-bold text-red-500">History:</h3>
+            <div className="mt-6 p-4 bg-[#1C2A48] rounded shadow-md">
+              <h3 className="text-lg font-bold text-[#1E90FF]">History:</h3>
               <p className="text-gray-300">{history}</p>
             </div>
           )}

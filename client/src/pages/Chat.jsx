@@ -7,7 +7,7 @@ const Chat = () => {
   const [input, setInput] = useState("");
 
   useEffect(() => {
-    fetch("http://127.0.0.1:5000/history")
+    fetch("http://127.0.0.1:8000/history")
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
@@ -24,7 +24,7 @@ const Chat = () => {
 
     setMessages((prev) => [...prev, { role: "user", parts: input }]);
 
-    fetch("http://127.0.0.1:5000/chat", {
+    fetch("http://127.0.0.1:8000/chat", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ input }),
@@ -44,7 +44,7 @@ const Chat = () => {
   };
 
   const handleDeleteHistory = () => {
-    fetch("http://127.0.0.1:5000/delete_history", { method: "DELETE" })
+    fetch("http://127.0.0.1:8000/delete_history", { method: "DELETE" })
       .then((res) => res.json())
       .then((data) => {
         if (data.success) {
