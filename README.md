@@ -7,20 +7,18 @@
 ## 🚀 Features
 
 - 🔐 **User Authentication** – Signup/Login via **Email & Google OAuth**
-- 💰 **Bet Placement** – Users can place bets on various sports events
+- 💰 **odds View** – Users can see the odds on various sports events (mostly football)
 - 📊 **Live Match Tracking** – Get real-time updates on scores & bets
-- 🔄 **Transaction History** – Track past bets, winnings, and losses
-- 💳 **Secure Payments** – Integrated payment gateway for deposits & withdrawals
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Frontend**: React.js, Tailwind CSS
-- **Backend**: Node.js, Express.js
+- **Backend**: FastAPI
 - **Database**: MongoDB
-- **Authentication**: Firebase / JWT
-- **Real-Time Updates**: WebSockets / Socket.io
+- **Authentication**: Firebase + JWT
+- **Real-Time Updates**: Api {in future sockets}
 
 ---
 
@@ -29,7 +27,7 @@
 ```bash
 Sport_Wager/
 ├── frontend/         # React.js frontend
-├── backend/          # Express.js backend
+├── backend/          # FastAPI backend
 ├── .gitignore        # Ignored files
 ├── README.md         # Project documentation
 ├── lstm_model.h5     # models used in project
