@@ -1,35 +1,32 @@
-import { useState } from "react";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
-import "./App.css";
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
-  const [count, setCount] = useState(0);
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import FM1 from "./pages/FM1";
+import About from "./pages/About";
+import LandingPage from "./pages/LandingPage";
+import Chat from "./pages/Chat";
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <Router>
+      <div className="flex flex-col min-h-screen bg-black">
+        <Header />
+
+        <main className="flex-1 flex justify-center items-center pb-12">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/predictor" element={<FM1 />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/chat" element={<Chat />} />
+          </Routes>
+        </main>
+
+        <Footer className="bg-[#1e1e2f] text-gray-400 text-center py-4 text-sm font-roboto mt-8" />
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
+    </Router>
   );
-}
+};
 
 export default App;

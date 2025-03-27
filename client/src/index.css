@@ -1,1 +1,12 @@
 @import "tailwindcss";
+
+@keyframes neonGlow {
+  0% { text-shadow: 0 0 10px red, 0 0 20px red; }
+  100% { text-shadow: 0 0 20px red, 0 0 30px red; }
+}
+
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
