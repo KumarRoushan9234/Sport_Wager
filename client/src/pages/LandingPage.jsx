@@ -23,7 +23,7 @@ const LandingPage = () => {
             border: "none",
             overflow: "hidden",
           }}
-          title="pl Standings"
+          title="LaLiga Standings"
         ></iframe>
         <div className="text-xs text-gray-400 mt-2">
           Standings provided by{" "}
